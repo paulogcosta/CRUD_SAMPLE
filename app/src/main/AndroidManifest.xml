@@ -17,6 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"></activity>
-    </application>
+        <service android:name=".SyncService" />
 
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

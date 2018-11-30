@@ -41,4 +41,9 @@ public class userRegisterDAO {
         return db.insert("regist",null,values);
 
     }
+
+    public void delete(userRegister register){
+        db.delete("regist","id=?",new String[]{register.getId().toString()});
+
+    }
 }
